@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>gr.dkelaidonis.public.projects.alexa.skills</groupId>
+	<artifactId>alexa-skill-world-population</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>Alexa Skill Demo - A Conversational AI-powered application for world population</name>
+	<description>This is a sample project for demonstrating the collaboration of the Amazon Alexa service and Spring Boot microservices.</description>
+	<developers>
+		<developer>
+			<name>Dimitris G. Kelaidonis</name>
+			<email>kelaidonis@gmail.com</email>
+			<organization>-</organization>
+			<organizationUrl>https://www.linkedin.com/in/dimitris-kelaidonis/</organizationUrl>
+		</developer>
+	</developers>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.0.RELEASE</version>
+	</parent>
+
+	<!-- project's specific properties -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<alexa.ask.version>2.30.0</alexa.ask.version>
+	</properties>
+
+	<!-- project's specific dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk</artifactId>
+			<version>${alexa.ask.version}</version>
+		</dependency>
+	</dependencies>
+
+	<!-- project's build configuration -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

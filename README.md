@@ -1,2 +1,3 @@
 # alexa-skill-world-population
-A full stack software architecture project for the integration of Conversational AI and Microservices (with Spring Boot).
+A sample project for demonstrating the integration of the Conversational AI and Microservices.
+Merging Amazon Alexa with Spring Boot.
