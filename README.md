@@ -1,3 +1,2 @@
 # alexa-skill-world-population
-A sample project for demonstrating the integration of the Conversational AI and Microservices.
-Merging Amazon Alexa with Spring Boot.
+This is a sample project for demonstrating the collaboration of the Amazon Alexa service and Spring Boot microservices.
